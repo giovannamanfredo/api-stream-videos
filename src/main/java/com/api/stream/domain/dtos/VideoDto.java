@@ -11,4 +11,8 @@ public record VideoDto(
          String url,
          LocalDateTime created_at
 ) {
+    public VideoDto() {
+        this(null, null, null,null);
+    }
 }
+
