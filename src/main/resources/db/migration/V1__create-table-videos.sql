@@ -1,0 +1,7 @@
+CREATE TABLE videos (
+    uuid VARCHAR(36) NOT NULL DEFAULT (UUID()) PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    url VARCHAR(255),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
